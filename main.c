@@ -10,7 +10,7 @@ int main() {
     int nb_lvl_h_l, find_nb, new_val;
 
     printf("Combien doit avoir de niveau votre agenda ? "); //ne pas mettre de trop grande valeur car le terminal
-    scanf("%d", &nb_lvl_h_l);                               //est restreint (valeur conseillée --> 2)
+    scanf("%d", &nb_lvl_h_l);                               //est restreint (valeur conseillÃ©e --> 2)
 
     l = CreateEmptyList(nb_lvl_h_l);//nombre de niveaux
 
@@ -20,14 +20,10 @@ int main() {
     printfList(l);
     printf("\n");
 
-    s = CreateEmptyList(nb_lvl_h_l);
 
-    printf("ZERO_LIST :\n\n");
-    zeroList(&s, nb_lvl_h_l);
-    printfList(s);
-    printf("\n");
-
-
+    
+    printf("Quelle valeure voulez vous chercher ?");
+    scanf("%d",&find_nb);
     debut = clock();
     for(int i; i < 1; i++){
         recherche_0(&l, find_nb);
